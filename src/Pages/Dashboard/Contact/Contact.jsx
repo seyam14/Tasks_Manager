@@ -17,8 +17,8 @@ const Contact = () => {
   return (
     <div className='m-4' id='contact'>
       <h2 className='text-white text-center font-bold text-4xl mt-4'> Contact</h2>
-    <form  onSubmit={sendEmail} className="max-w-md mx-auto mt-10 p-6 bg-gradient-to-b from-[#AA076B] to-[#AA076B] via-[#61045F]  rounded-md shadow-md">
-      <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
+    <form  onSubmit={sendEmail} className="max-w-md mx-auto mt-10 p-6 bg-gray-300  rounded-md shadow-md">
+      <label className="block  text-sm font-bold mb-2" htmlFor="name">
         Name
       </label>
       <input
@@ -29,7 +29,7 @@ const Contact = () => {
         required
       />
 
-      <label className="block  text-white text-sm font-bold mt-4 mb-2" htmlFor="email">
+      <label className="block   text-sm font-bold mt-4 mb-2" htmlFor="email">
         Email
       </label>
       <input
@@ -40,7 +40,7 @@ const Contact = () => {
         required
       />
 
-      <label className="block text-white text-sm font-bold mt-4 mb-2" htmlFor="message">
+      <label className="block text-sm font-bold mt-4 mb-2" htmlFor="message">
         Message
       </label>
       <textarea

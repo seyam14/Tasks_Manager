@@ -19,6 +19,7 @@ import Contact from './Pages/Dashboard/Contact/Contact';
 import NewTasks from './Pages/Dashboard/NewTasks/NewTasks';
 import PreviousTask from './Pages/Dashboard/PreviousTask/PreviousTask.JSX';
 import UpdateTasks from './Pages/UserHome/LoadTask/updateTasks';
+import AboutMe from './Pages/AboutMe/AboutMe';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element:<Login></Login>
+      },
+      {
+        path: "/about",
+        element:<AboutMe></AboutMe>
       },
       {
         path: "/contact",

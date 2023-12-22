@@ -13,6 +13,12 @@ const Navbar = () => {
     <li>
         <NavLink className="font-bold " to='/'>Home</NavLink>
     </li>   
+    <li>
+        <NavLink className="font-bold " to='/about'>About</NavLink>
+    </li>
+    <li>
+        <NavLink className="font-bold " to='/contact'>Contact</NavLink>
+    </li>
     {
       user && <li>
       <NavLink className="font-bold"  to='/dashboard/userHome'>Dashboard</NavLink>

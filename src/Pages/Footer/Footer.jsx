@@ -11,7 +11,7 @@ const Footer = () => {
         <nav>
           <header className="footer-title">Contact</header> 
           <p>Email :TasksManager@gmail.com</p>
-          <p>Phone Number:(+880 1767649313) </p>
+          <p>Phone Number:(+880) 17******** </p>
         </nav> 
         <nav>
           <header className="footer-title">Address</header> 
