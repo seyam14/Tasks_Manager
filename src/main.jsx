@@ -17,6 +17,7 @@ import Dashboard from './layout/Dashboard';
 import UserHome from './Pages/UserHome/UserHome';
 import Contact from './Pages/Dashboard/Contact/Contact';
 import NewTasks from './Pages/Dashboard/NewTasks/NewTasks';
+import PreviousTask from './Pages/Dashboard/PreviousTask/PreviousTask.JSX';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: 'newTask',
         element: <NewTasks></NewTasks>
+      },
+      {
+        path: 'previousTask',
+        element: <PreviousTask></PreviousTask>
       },
       
       

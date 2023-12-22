@@ -24,7 +24,7 @@ const Banner = () => {
               <div className="inline-flex mt-4">
                 <div className="text-center">
                   <button className="bg-red-500 text-white rounded-r py-2 px-4 hover:bg-blue-600">
-                    <Link to='/dashboard'> Let’s Explore</Link>
+                    <Link to='/dashboard/userHome'> Let’s Explore</Link>
                   </button>
                 </div>
               </div>

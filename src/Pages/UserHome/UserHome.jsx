@@ -1,4 +1,5 @@
 import useAuth from "../../layout/Hooks/useAuth";
+import LoadTask from "./LoadTask/LoadTask.JSX";
 
 
 
@@ -13,6 +14,9 @@ const UserHome = () => {
                     user?.displayName ? user.displayName : 'Back'
                 }
             </h2>
+            <LoadTask></LoadTask>
+
+
         </div>
     );
 };
