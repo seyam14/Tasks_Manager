@@ -27,7 +27,7 @@ const Login = () => {
             if (user){
                 Navigate(location?.state?location?.state:"/")
             }
-            axios.post('', userInfo)
+            axios.post('http://localhost:5000/user', userInfo)
             .then(res =>{
                 console.log(res.data);
                 Swal.fire("Login Successful!", "You are now logged in.", "success");

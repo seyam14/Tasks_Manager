@@ -7,8 +7,8 @@ import Swal from "sweetalert2";
 
 
 const Register = () => {
-  const location =useLocation();
-  const Navigate = useNavigate();
+     const location =useLocation();
+     const Navigate = useNavigate();
     const [registerError, setRegisterError] = useState('');
     const { createUser } = useContext(AuthContext);
   
@@ -38,7 +38,7 @@ const Register = () => {
           const user = {name,photo, email, createdAt: createdAt };
   
           // Send user data to your server (Assuming you have a server)
-          fetch('', {
+          fetch('http://localhost:5000/user', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'
