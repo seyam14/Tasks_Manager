@@ -18,6 +18,7 @@ import UserHome from './Pages/UserHome/UserHome';
 import Contact from './Pages/Dashboard/Contact/Contact';
 import NewTasks from './Pages/Dashboard/NewTasks/NewTasks';
 import PreviousTask from './Pages/Dashboard/PreviousTask/PreviousTask.JSX';
+import UpdateTasks from './Pages/UserHome/LoadTask/updateTasks';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,11 @@ const router = createBrowserRouter([
       {
         path: 'previousTask',
         element: <PreviousTask></PreviousTask>
+      },
+      {
+        path: '/dashboard/updateTask/:id',
+        element: <UpdateTasks></UpdateTasks>,
+        loader: ({ params }) => fetch(`http://localhost:5000/Tasks/${params.id}`)
       },
       
       

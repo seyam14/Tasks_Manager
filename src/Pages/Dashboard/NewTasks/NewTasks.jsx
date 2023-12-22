@@ -55,7 +55,7 @@ const NewTasks = () => {
 
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto mt-8 p-4 bg-white shadow-lg rounded-lg">
+    <form onSubmit={handleSubmit(onSubmit)} className="bg-gray-300 max-w-md mx-auto mt-8 p-4 bg-white shadow-lg rounded-lg">
       <div className="mb-4">
         <label htmlFor="title" name="title" className="block text-sm font-medium text-gray-600">
           Title:
