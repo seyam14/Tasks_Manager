@@ -17,7 +17,7 @@ const NewTasks = () => {
   
       try {
         // send data to the server using Axios
-        const response = await axios.post(`http://localhost:5000/Tasks`, Tasks, {
+        const response = await axios.post(`https://tasks-management-server-chi.vercel.app/Tasks`, Tasks, {
           withCredentials: true,
         });
         console.log(response.data);

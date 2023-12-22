@@ -10,7 +10,7 @@ const TaskCard = ({ task }) => {
 
   const handleDelete = () => {
     console.log(_id);
-    axios.delete(`http://localhost:5000/Tasks/${_id}`)
+    axios.delete(`https://tasks-management-server-chi.vercel.app/Tasks/${_id}`)
       .then(res => {
         console.log(res.data);
         // Show SweetAlert2 toast after successful deletion
